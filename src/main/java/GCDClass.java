@@ -13,4 +13,13 @@ public class GCDClass {
             return gCD(q, p);
         }
     }
+
+    public static long gCD1(long p , long q) {
+        while (q != 0){
+            long temp = q ;
+            q = p % q ;
+            p = temp ;
+        }
+        return p ;
+    }
 }
